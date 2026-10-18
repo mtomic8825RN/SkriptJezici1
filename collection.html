@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Metropolitan Museum of Art</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel ="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            Museum
+        </a>
+
+        <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="collection.html">Collection</a>
+    </li>
+    
+<li class="nav-item dropdown">
+    <a
+        class="nav-link dropdown-toggle"
+        href="#"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+    >
+        Departments
+    </a>
+
+    <ul class="dropdown-menu">
+        <li>
+            <a class="dropdown-item" href="collection.html?department=10">
+                Egyptian Art
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="collection.html?department=11">
+                European Paintings
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="collection.html?department=6">
+                Asian Art
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<form class="d-flex" role="search" action="collection.html" method="GET">
+    <input
+        class="form-control me-2"
+        type="search"
+        name="search"
+        placeholder="Search art..."
+        aria-label="Search"
+    >
+
+    <button class="btn btn-success" type="submit">
+        Search
+    </button>
+</form>
+
+    </div>
+</nav>
+
+<main>
+    <section class="container py-5">
+
+        <h1 class="display-4">
+            Art Collection
+        </h1>
+
+        <div id="artworks" class="row g-4">
+            <p>Artworks will appear here in a few seconds...</p>
+        </div>
+        <div id="pagination" class="mt-4 d-flex justify-content-center"></div>
+    </section>
+</main>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script
+        src="javaScript/collection.js">
+    </script>
+</body>
+</html>

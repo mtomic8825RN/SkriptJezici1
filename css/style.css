@@ -1,0 +1,10 @@
+body {
+    background-color: #f8f7f4;
+}
+
+.museum-image {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
